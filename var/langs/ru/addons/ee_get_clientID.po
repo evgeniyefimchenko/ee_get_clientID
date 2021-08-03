@@ -1,0 +1,25 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+
+msgctxt "Addons::name::ee_get_clientID"
+msgid "ee_get_clientID_name"
+msgstr "[efimchenko.ru] Запись ClientID"
+
+msgctxt "Addons::description::ee_get_clientID"
+msgid "ee_get_clientID_description"
+msgstr "Модуль записывает ClientID яндекс метрики в доп. созданное поле таблицы users ee_clientID"
+
+msgctxt "SettingsSections::ee_get_clientID::general"
+msgid "ee_get_clientID_general"
+msgstr "Общее"
+
+msgctxt "SettingsOptions::ee_get_clientID::ee_get_clientID_active"
+msgid "ee_get_clientID_active"
+msgstr "Активировать"
+
+msgctxt "SettingsTooltips::ee_get_clientID::ee_get_clientID_active"
+msgid "ee_get_clientID_active_tooltips"
+msgstr "Подсказка"
