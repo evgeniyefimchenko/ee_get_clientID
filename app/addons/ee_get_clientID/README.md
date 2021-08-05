@@ -1,1 +1,3 @@
-﻿ee_get_clientID - Записывает clientID яндекс из кукиса в таблицу 
+﻿ee_get_clientID - Записывает clientID яндекс из кукиса в таблицу USERS в доп поле ee_clientID, в карточке заказа показывает user_id и _ym_uid если установлен. Перезапись _ym_uid происходит если пользователь зашёл на сайт и _ym_uid изменился.
+Во время установки устанавливает дополнительный хук ee_rus_exim_1c_order_data в файл app/addons/rus_exim_1c/Tygh/Commerceml/RusEximCommerceml.php и удалит его при удалении модуля, дополнительное поле ee_clientID не удаляется.
+Хук испольхуется для передачи параметра ee_clientID в файл XML выгрузки Commerceml для 1с и МойСклад
