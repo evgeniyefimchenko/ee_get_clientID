@@ -73,8 +73,8 @@ function fn_ee_get_clientID_get_ID($user_id) {
 	return db_get_field('SELECT ee_clientID FROM ?:users WHERE user_id = ?i', $user_id);
 }
 
-// добавляем поле roistat в xml для моего_склада
+// добавляем поле ee_clientID в xml
 function fn_ee_get_clientID_ee_rus_exim_1c_order_data($order_data, &$order_xml) {      	
-	//$order_xml['ЗначенияРеквизитов'][0]['ЗначениеРеквизита']['Наименование'] = "ee_clientID";	
-	//$order_xml['ЗначенияРеквизитов'][0]['ЗначениеРеквизита']['Значение'] = $order_data['order_id'];	
+	$order_xml['ЗначенияРеквизитов'][0]['ЗначениеРеквизита']['Наименование'] = "ee_clientID";	
+	$order_xml['ЗначенияРеквизитов'][0]['ЗначениеРеквизита']['Значение'] = fn_ee_get_clientID_get_ID($order_data['user_id']);
 }
